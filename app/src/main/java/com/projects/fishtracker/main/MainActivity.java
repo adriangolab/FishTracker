@@ -15,6 +15,6 @@ public class MainActivity extends AppCompatActivity implements MainContract.MvpV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mPresenter = new MainPresenter();
+        mPresenter = new MainPresenter(this);
     }
 }
